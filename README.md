@@ -139,12 +139,6 @@ Recovery delays are estimated from historical mode averages, not observed outcom
 
 ---
 
-## Follow-up Research
-
-These limitations motivated **PACER** (*Promise-Anchored, Capacity-Constrained Order Reassignment for Shipping Disruptions: When Do Transit Distributions Matter?*). PACER replaces per-order scoring with a joint, capacity-constrained linear program that uses promise-anchored lateness from pooled transit-time distributions, and is evaluated on DataCo and Olist. The PACER code is not part of this repository.
-
----
-
 ## Author
 
 **Praveena Anand**
