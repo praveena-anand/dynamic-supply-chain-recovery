@@ -139,15 +139,6 @@ Recovery delays are estimated from historical mode averages, not observed outcom
 
 ---
 
-## Limitations
-
-- **No capacity limits.** Orders are scored independently, so every affected order goes to the same "best" mode.
-- **Point estimates only.** Mean transit times hide tail risk; Second Class averages about 4 days but often misses a 4-day promise.
-- **Reliability is relative to each mode's own schedule.** First Class looks "always late" even though it would meet a 4-day promise.
-- **Stylized costs and no counterfactual validation.** Costs are modelled units, and outcomes under alternative modes are never observed.
-
----
-
 ## Follow-up Research
 
 These limitations motivated **PACER** (*Promise-Anchored, Capacity-Constrained Order Reassignment for Shipping Disruptions: When Do Transit Distributions Matter?*). PACER replaces per-order scoring with a joint, capacity-constrained linear program that uses promise-anchored lateness from pooled transit-time distributions, and is evaluated on DataCo and Olist. The PACER code is not part of this repository.
